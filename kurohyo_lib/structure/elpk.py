@@ -25,6 +25,7 @@ MAGIC_TO_KHFILE_TYPE = {
     'skel': KHSkel,
 }
 
+KHFILE_TYPE_TO_MAGIC = dict([(value, key) for key, value in MAGIC_TO_KHFILE_TYPE.items()])
 
 class ElpkPage(BrStruct):
     def __br_read__(self, br: BinaryReader, page_hash, page_size):
