@@ -74,6 +74,7 @@ class KHModeVertexFlag(FlagEnum):
 class KHPoseFlag(FlagEnum):
     SHORT_FLOATS = 0x8000
     CAMERA = 0x0003
+    POSE = 0x0001
 
 
 class KHPoseChannelFlag(FlagEnum):
